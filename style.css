@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sun{
+    width: 50%;
+    height: 50%;
+
+    margin: auto;
+}
+
+.btn{
+    height: 50px;
+    width: 200px;
+
+    margin: auto;
+    padding: 20px;
+    line-height: 0;
+    font-size: 30px;
+
+    background-color: #56D1FF;
+    border: solid 2px #FFFB73;
+    color: #FFFB73;
+    
+}

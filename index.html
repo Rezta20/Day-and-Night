@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Day and Night</title>
+</head>
+
+<body>
+    <img id="sun" class="sun" src="img/sun.png" alt="sun">
+    <button id="btn" class="btn" type="button" onclick="change()">Day</button>
+
+    <script>
+        function change() {
+            var button = document.getElementById("btn").innerHTML;
+
+            if (button == "Day") {
+                document.getElementById("sun").src = "img/moon.png";
+                document.getElementById("btn").innerHTML = "Night";
+                document.getElementById("btn").style.background = "#A3A3A3";
+                document.body.style.backgroundColor = "#A3A3A3";
+            } else {
+                document.getElementById("btn").innerHTML = "Day";
+                document.getElementById("sun").src = "img/sun.png";
+                document.getElementById("btn").style.backgroundColor = "#56D1FF";
+                document.body.style.backgroundColor = "#fff";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
